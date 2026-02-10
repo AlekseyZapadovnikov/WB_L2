@@ -1,0 +1,16 @@
+template: testify
+
+dir: mocks
+pkgname: mocks
+filename: "{{.InterfaceName}}.go"
+
+packages:
+  calendar/internal/repository:
+    config:
+      all: true
+  calendar/internal/usecase:
+    config:
+      all: true
+  calendar/internal/transport:
+    config:
+      all: true
